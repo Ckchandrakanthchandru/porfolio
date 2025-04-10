@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+}
+
+/* Logo and Title */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #f1b400;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.title {
+    font-size: 14px;
+    color: gray;
+    font-weight: normal;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #f1b400;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+    background-color: rgb(200, 236, 250);
+}
+
+/* Profile Image */
+.profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+/* Introduction Text */
+.intro h1 {
+    font-size: 50px;
+}
+
+.intro h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.intro p {
+    max-width: 400px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.resume {
+    background: #f1b400;
+}
+
+.projects {
+    background: #ff4d4d;
+}
+
+.contact {
+    background: #6ec6d9;
+}
+
+.btn:hover {
+    transform: rotate(5deg) scale(1.1);
+    background-color: #ff5733;
+}
+
+/* Footer Section */
+footer {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact-info h3,
+.social-links h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin-top: 5px;
+    color: #333;
+}
+
+.social-links img {
+    width: 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.footer-bottom a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
